@@ -1,0 +1,124 @@
+:root {
+    --sarga: rgb(255, 255, 133);
+}
+
+body {
+    background-color: #8c8;
+    background-image: url(img/grass.jpg);
+    width: 1200px;
+    max-width: 100%;
+    font-family: 'Verdana';
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+}
+
+div.doboz {
+    background-color: #08f;
+
+    background-image: url(img/splash.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+
+    max-width: 970px;
+
+    box-shadow: 0 0 15px 0px black;
+    border-radius: 50px;
+
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 50px;
+}
+div.doboz:nth-child(1) {
+    max-width: 600px;
+    box-shadow: none;
+    border-bottom: 5px solid white;
+}
+.doboz:nth-child(odd) {margin-left: 150px;}
+.doboz:nth-child(even) {margin-right: 150px;}
+
+h1 {text-align: center;}
+h1:not(#focim) {border-bottom: 2px solid #fff;}
+
+p {text-align: justify;}
+#focim {
+    text-shadow: 4px 4px black;
+    line-height: 3rem;
+}
+
+table.adat {
+    float: right;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 10px;
+    text-align: left;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    box-shadow: 10px 10px 15px -10px black;
+}
+table.adat tr td {
+    border: 1px solid #08f;
+    padding: 5px;
+    background-color: white;
+    vertical-align: top;
+    color: #0f4989;
+}
+table.adat tr td:nth-child(1) {font-weight: bold;}
+table.adat tr td:nth-child(2) {width: 210px;}
+td.terkep:hover {background-color: var(--sarga);}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img[src="img/map.png"] {
+    width: 20px;
+    float: left;
+    margin-right: 5px;
+}
+
+.kiskep {
+    display: inline-block;
+    width: 140px;
+    height: 140px;
+    line-height: 136px;
+    box-shadow: 10px 10px 15px -10px black;
+    border-radius: 10px;
+    background-color: white;
+    margin: 5px;
+    text-align: center;
+}
+.kiskep:hover {background-color: yellow;}
+.kiskep a img {
+    vertical-align: middle;
+    max-width: 128px;
+    max-height: 128px;
+}
+
+.linkek {
+    background-color: #09f;
+    box-shadow: 10px 10px 15px -10px black;
+    border-radius: 10px;
+    border-left: 10px double white;
+    width: 250px;
+    padding: 5px 10px;
+    text-align: left;
+}
+
+.linkek ul li {
+    list-style: url(img/suw.png);
+    word-wrap: break-word;
+    word-break: normal;
+    margin-bottom: 4px;
+}
+.linkek ul li:hover {list-style: url(img/sun.png);}
+.linkek ul li a {
+    display: inline-block;
+    font-weight: bold;
+}
+.linkek ul li a:hover {
+    background-color: var(--sarga);
+    color: rgb(54, 54, 54);
+    padding: 2px;
+}
